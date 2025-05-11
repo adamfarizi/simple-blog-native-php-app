@@ -1,51 +1,28 @@
-# Aplikasi Manajemen Produk
+# Simple PHP Web Blog
 
-Aplikasi sederhana berbasis PHP untuk mengelola data produk. Aplikasi ini mendukung fitur login, melihat daftar produk, menambah, mengedit, dan menghapus produk. Antarmuka pengguna dibangun dengan Bootstrap.
+A lightweight web blog built with native PHP, MySQLi, and Bootstrap.  
+Supports user authentication, article management (CRUD), image uploads, and genre-based filtering.
 
-## Fitur
+---
 
-- Login user
-- Daftar produk
-- Tambah produk
-- Edit produk
-- Hapus produk
-- Validasi login
+## Features
 
-## Teknologi yang Digunakan
-
-- PHP Native
-- MySQL
-- Bootstrap 5
-
-## Struktur Folder
-
-```
-
-project/
-├── public/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── \[file js tambahan jika ada]
-│   └── product\_list.php
-├── controllers/
-│   ├── auth.php
-│   └── product.php
-├── layouts/
-│   ├── header.php
-│   └── footer.php
-├── database/
-│   └── connection.php
-└── README.md
-
-````
+- User login & logout
+- Admin dashboard
+- CRUD Artikel (Create, Read, Update, Delete)
+- Upload gambar ke folder `uploads/`
+- Genre artikel sebagai enum dengan dropdown saat tambah/edit
+- Tampilkan artikel dalam bentuk card (Bootstrap)
+- Filter artikel berdasarkan genre
+- Halaman detail artikel untuk user dan admin
+- Responsive UI dengan Bootstrap 5
 
 ## Instalasi
 
 1. Clone project ini:
 
 ```bash
-git clone https://github.com/adamfarizi/simple-native-php-app.git
+git clone https://github.com/adamfarizi/simple-blog-native-php-app.git
 ````
 
 2. Import database dari file `database.sql` (jika tersedia).
